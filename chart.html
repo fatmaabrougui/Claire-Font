@@ -1,17 +1,3 @@
-<!--
-?php
-session_start();
-if (empty($_SESSION['username']) || (empty($_SESSION['Id'])))
-{
-    header("location:login.php");
-
-}
-
-
-
-
-?>-->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +10,7 @@ if (empty($_SESSION['username']) || (empty($_SESSION['Id'])))
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Tables</title>
+    <title>Charts</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -196,13 +182,13 @@ if (empty($_SESSION['username']) || (empty($_SESSION['Id'])))
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="chart.html">
                                 <i class="fas fa-chart-bar"></i>Charts</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="table.html">
-                                <i class="fas fa-table"></i>Produits</a>
+                                <i class="fas fa-table"></i>Tables</a>
                         </li>
                         <li>
                             <a href="form.html">
@@ -453,52 +439,83 @@ if (empty($_SESSION['username']) || (empty($_SESSION['Id'])))
             <!-- END HEADER DESKTOP-->
 
             <!-- MAIN CONTENT-->
-            <?PHP
-            include "../../core/produitC.php";
-            $produit=new produitC();
-            $listeProduits=$produit->afficherProduit();
-
-            ?>
             <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-9">
-                                <div class="table-responsive table--no-card m-b-30">
-                                    <table class="table table-borderless table-striped table-earning">
-                                        <thead>
-                                            <tr>
-                                                <th> Id Produits </th>
-                                                <th>Titre</th>
-                                                <th>Auteur</th>
-                                                <th class="text-right">prix</th>
-                                                <th class="text-right">quantite</th>
-                                                <th class="text-right">Categorie</th>
-                                            </tr>
-                                        </thead>
-                                        <?PHP
-                                        foreach($listeProduits as $row){
-                                            ?>
-                                            <tr>
-                                                <td><?PHP echo '<img width="20px" height="20px" src="images/'.$row['image'].'"">'; ?></td>
-                                                <td><?PHP echo $row['id_produit']; ?></td>
-                                                <td><?PHP echo $row['titre']; ?></td>
-                                                <td><?PHP echo $row['auteur']; ?></td>
-                                                <td><?PHP echo $row['prix']; ?></td>
-                                                <td><?PHP echo $row['quantite']; ?></td>
-                                                  <td><?PHP echo $row['categorie']; ?></td>
-                                                <td><a href="supprimerProduit.php?id_p=<?PHP echo $row['id_produit']; ?>">Supprimer
-                                                </td>
-                                                <td><a href="modifierProduit.php?id_p=<?PHP echo $row['id_produit']; ?>">
-                                                        Modifier</a></td>
-                                            </tr>
-                                            <?PHP
-                                        }
-                                        ?>
-                                    </table>
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Yearly Sales</h3>
+                                        <canvas id="sales-chart"></canvas>
+                                    </div>
                                 </div>
                             </div>
-
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Team Commits</h3>
+                                        <canvas id="team-chart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Bar chart</h3>
+                                        <canvas id="barChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Rader chart</h3>
+                                        <canvas id="radarChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Line Chart</h3>
+                                        <canvas id="lineChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Doughut Chart</h3>
+                                        <canvas id="doughutChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Pie Chart</h3>
+                                        <canvas id="pieChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Polar Chart</h3>
+                                        <canvas id="polarChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Single Bar Chart</h3>
+                                        <canvas id="singelBarChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="copyright">
@@ -509,7 +526,9 @@ if (empty($_SESSION['username']) || (empty($_SESSION['Id'])))
                     </div>
                 </div>
             </div>
+            <!-- END MAIN CONTENT-->
         </div>
+        <!-- END PAGE CONTAINER-->
 
     </div>
 

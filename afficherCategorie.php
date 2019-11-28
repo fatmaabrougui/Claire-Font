@@ -1,23 +1,20 @@
 <?php
-/*session_start();
+session_start();
 if (empty($_SESSION['username']) || (empty($_SESSION['Id'])))
 {
     header("location:login.php");
-}*/
-include_once "../../core/produitC.php";
-include_once "../../entities/Produit.php";
-if (isset($_POST['ajouter'])){
-    $img=null;
+
 }
-if (!empty($_FILES['img'])) {
-    $extension_upload = strtolower(substr(strrchr($_FILES['img']['name'], '.'), 1));
-    $x = uniqid();  // retourne un id unique
-    $img=  $x . '.' . $extension_upload;
-    move_uploaded_file($_FILES["img"]["tmp_name"], 'images/' .$img);
-    $produit=new Produit($_POST['id_produit'],$_POST['titre'], $_POST['auteur'],$img,$_POST['prix'],$_POST['quantite'],$_POST['categorie']);
-    $produitC=new produitC();
-    $produitC->ajouterProduit($produit);
-    header('Location: afficherProduit.php');
+
+
+include "../../core/categorieC.php";
+include "../../entities/Categorie.php";
+if (isset($_POST['ajouter'])){
+    $categorie=new Categorie($_POST['id_categorie'],$_POST['description']);
+    $categorieC=new categorieC();
+    $categorieC->ajouterCategorie($categorie);
+
+    header('Location: afficherCategorie.php');
 }
 ?>
 <!DOCTYPE html>
@@ -32,7 +29,7 @@ if (!empty($_FILES['img'])) {
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title> Ajout Produit</title>
+    <title>Dashboard</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -64,7 +61,7 @@ if (!empty($_FILES['img'])) {
             <div class="header-mobile__bar">
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
-                        <a class="logo" href="index.php">
+                        <a class="logo" href="index.html">
                             <img src="images/icon/logo.png" alt="CoolAdmin" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
@@ -83,30 +80,129 @@ if (!empty($_FILES['img'])) {
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="index.php">ajouter produit</a>
+                                    <a href="index.html">Dashboard 1</a>
                                 </li>
                                 <li>
-                                    <a href="index2.php">afficher produit</a>
+                                    <a href="index2.html">Dashboard 2</a>
                                 </li>
-
+                                <li>
+                                    <a href="index3.html">Dashboard 3</a>
+                                </li>
+                                <li>
+                                    <a href="index4.html">Dashboard 4</a>
+                                </li>
                             </ul>
                         </li>
-
                         <li>
-                            <a href="index2.html">
-                                <i class="fas fa-table"></i> afficher produit</a>
+                            <a href="chart.html">
+                                <i class="fas fa-chart-bar"></i>Charts</a>
+                        </li>
+                        <li>
+                            <a href="table.html">
+                                <i class="fas fa-table"></i>Tables</a>
                         </li>
                         <li>
                             <a href="form.html">
                                 <i class="far fa-check-square"></i>Forms</a>
                         </li>
-
-
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-calendar-alt"></i>Calendar</a>
+                        </li>
+                        <li>
+                            <a href="map.html">
+                                <i class="fas fa-map-marker-alt"></i>Maps</a>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-copy"></i>Pages</a>
+                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                                <li>
+                                    <a href="login.html">Login</a>
+                                </li>
+                                <li>
+                                    <a href="register.html">Register</a>
+                                </li>
+                                <li>
+                                    <a href="forget-pass.html">Forget Password</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-desktop"></i>UI Elements</a>
+                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                                <li>
+                                    <a href="button.html">Button</a>
+                                </li>
+                                <li>
+                                    <a href="badge.html">Badges</a>
+                                </li>
+                                <li>
+                                    <a href="tab.html">Tabs</a>
+                                </li>
+                                <li>
+                                    <a href="card.html">Cards</a>
+                                </li>
+                                <li>
+                                    <a href="alert.html">Alerts</a>
+                                </li>
+                                <li>
+                                    <a href="progress-bar.html">Progress Bars</a>
+                                </li>
+                                <li>
+                                    <a href="modal.html">Modals</a>
+                                </li>
+                                <li>
+                                    <a href="switch.html">Switchs</a>
+                                </li>
+                                <li>
+                                    <a href="grid.html">Grids</a>
+                                </li>
+                                <li>
+                                    <a href="fontawesome.html">Fontawesome Icon</a>
+                                </li>
+                                <li>
+                                    <a href="typo.html">Typography</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </header>
         <!-- END HEADER MOBILE-->
+        <?PHP
+        include "../../core/categorieC.php";
+        $categorie=new categorieC();
+        $listeCategorie=$categorie->affichercategories();
+
+        ?>
+        <div class="table-responsive">
+            <table >
+                <tr>
+                    <th>id_categorie</th>
+                    <th>description</th>
+
+                </tr>
+
+                <?PHP
+                foreach($listeCategorie as $row){
+                    ?>
+                    <tr>
+                        <td><?PHP echo $row['id_categorie']; ?></td>
+                        <td><?PHP echo $row['nom_categorie']; ?></td>
+                        <td><a href="supprimerCategorie.php?id_c=<?PHP echo $row['id_categorie']; ?>">Supprimer
+                        </td>
+                        <td><a href="modifierCategorie.php?id_c=<?PHP echo $row['id_categorie']; ?>">
+                                Modifier</a></td>
+                    </tr>
+                    <?PHP
+                }
+                ?>
+            </table>
+
+        </div>
 
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
@@ -123,12 +219,17 @@ if (!empty($_FILES['img'])) {
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="index.php">Dashboard 1</a>
+                                    <a href="index.html">Dashboard 1</a>
                                 </li>
                                 <li>
                                     <a href="index2.html">Dashboard 2</a>
                                 </li>
-
+                                <li>
+                                    <a href="index3.html">Dashboard 3</a>
+                                </li>
+                                <li>
+                                    <a href="index4.html">Dashboard 4</a>
+                                </li>
                             </ul>
                         </li>
                         <li>
@@ -210,131 +311,6 @@ if (!empty($_FILES['img'])) {
             </div>
         </aside>
         <!-- END MENU SIDEBAR-->
-
-        <!-- PAGE CONTAINER-->
-        <div class="page-container">
-            <!-- HEADER DESKTOP-->
-            <?PHP
-            include_once "../../core/produitC.php";
-            $produit=new produitC();
-            $listeProduits=$produit->afficherproduits();
-            ?>
-            <div class="main-panel">
-                <div class="content-wrapper">
-                    <div class="row">
-                        <div class="col-12 m-auto grid-margin">
-                            <div class="card">
-                                <div class="row">
-                                    <div class="col-10 ml-lg-4 ">
-                                        <form class="forms-sample" method="post" onsubmit="return testAjouProduit()"  enctype="multipart/form-data">
-                                            <div class="form-group">
-
-                                                <label for="exampleInputName1">ID produit</label>
-                                                <input type="number" required class="form-control" name="id_produit" id="id_produit" placeholder="id produit">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail3">Titre</label>
-                                                <input type="text" required class="form-control" name="titre" id="titre" placeholder="titre ">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleInputPassword4">Auteur</label>
-                                                <input type="text" required name="auteur" class="form-control" id="auteur" placeholder="auteur">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="exampleSelectGender">available</label>
-                                                <select required class="form-control" name="available" id="available">
-                                                    <option value="0">valable</option>
-                                                    <option value="1">description valable</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>image upload</label>
-                                                <input required type="file" name="img" class="file-upload-default">
-                                                <div class="input-group col-xs-12">
-                                                    <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                                                    <span class="input-group-append">
-                              <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                            </span>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="exampleTextarea1">description</label>
-                                                <textarea required class="form-control" name="description" id="description" rows="4"></textarea>
-                                            </div>
-
-
-
-                                            <div class="card-body">
-                                                <p class="card-description">choisissez la categorie</p>
-
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <?php
-                                                        include "../../core/categorieC.php";
-                                                        $categorie=new categorieC();
-                                                        $listeCategorie=$categorie->affichercategories();
-                                                        foreach($listeCategorie as $row) {
-                                                            ?>
-                                                            <div class="form-group">
-                                                                <div class="form-check form-check-primary">
-                                                                    <label class="form-check-label">
-                                                                        <input name="categorie" type="radio"
-                                                                               value="<?PHP echo $row['categorie']; ?>"
-                                                                               class="form-check-input" checked>
-                                                                        <?PHP echo $row['categorie']; ?>
-                                                                    </label>
-                                                                </div>
-
-                                                            </div>
-                                                            <?php
-                                                        }
-                                                        ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                            <input type="submit" class="btn btn-primary mr-2" value="Submit">
-                                            <button class="btn btn-light">Cancel</button>
-                                            <form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- END MAIN CONTENT-->
-            <!-- END PAGE CONTAINER-->
-        </div>
-
 
 
     <!-- Jquery JS-->

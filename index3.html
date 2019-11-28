@@ -1,5 +1,4 @@
-<!--
-?php
+<?php
 session_start();
 if (empty($_SESSION['username']) || (empty($_SESSION['Id'])))
 {
@@ -10,8 +9,7 @@ if (empty($_SESSION['username']) || (empty($_SESSION['Id'])))
 
 
 
-?>-->
-
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,20 +70,15 @@ if (empty($_SESSION['username']) || (empty($_SESSION['Id'])))
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                                <i class="fas fa-tachometer-alt"></i>Produits</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="index.html">Dashboard 1</a>
+                                    <a href="index.html"> 1</a>
                                 </li>
                                 <li>
-                                    <a href="index2.html">Dashboard 2</a>
+                                    <a href="index2.html">Afficher Produit 2</a>
                                 </li>
-                                <li>
-                                    <a href="index3.html">Dashboard 3</a>
-                                </li>
-                                <li>
-                                    <a href="index4.html">Dashboard 4</a>
-                                </li>
+                              
                             </ul>
                         </li>
                         <li>
@@ -456,7 +449,7 @@ if (empty($_SESSION['username']) || (empty($_SESSION['Id'])))
             <?PHP
             include "../../core/produitC.php";
             $produit=new produitC();
-            $listeProduits=$produit->afficherProduit();
+            $listeProduits=$produit->afficherproduits();
 
             ?>
             <div class="main-content">

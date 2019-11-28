@@ -1,5 +1,4 @@
-<!--
-?php
+<?php
 session_start();
 if (empty($_SESSION['username']) || (empty($_SESSION['Id'])))
 {
@@ -10,8 +9,7 @@ if (empty($_SESSION['username']) || (empty($_SESSION['Id'])))
 
 
 
-?>-->
-
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -456,7 +454,7 @@ if (empty($_SESSION['username']) || (empty($_SESSION['Id'])))
             <?PHP
             include "../../core/produitC.php";
             $produit=new produitC();
-            $listeProduits=$produit->afficherProduit();
+            $listeProduits=$produit->afficherproduits();
 
             ?>
             <div class="main-content">
@@ -483,7 +481,7 @@ if (empty($_SESSION['username']) || (empty($_SESSION['Id'])))
                                                 <td><?PHP echo '<img width="20px" height="20px" src="images/'.$row['image'].'"">'; ?></td>
                                                 <td><?PHP echo $row['id_produit']; ?></td>
                                                 <td><?PHP echo $row['titre']; ?></td>
-                                                <td><?PHP echo $row['auteur']; ?></td>
+                                                <td><?PHP echo $row['Auteur']; ?></td>
                                                 <td><?PHP echo $row['prix']; ?></td>
                                                 <td><?PHP echo $row['quantite']; ?></td>
                                                   <td><?PHP echo $row['categorie']; ?></td>

@@ -1,15 +1,11 @@
-<?php 
-
+<?php
 
 session_start();
-session_destroy();
 
+unset($_SESSION["uid"]);
 
-header("Location:index.php");
+unset($_SESSION["name"]);
 
-
-
-
-
+header("location:index.php");
 
 ?>

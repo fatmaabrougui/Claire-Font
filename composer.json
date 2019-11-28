@@ -1,0 +1,27 @@
+{
+  "name" : "projet/web",
+  "description": "my first projet",
+  "authors" :[
+  { "name": "aziz jawedi",
+  	"email": "aziz.jawedi@esprit.tn"
+
+  }
+],
+  "require" : {
+    "projet/support" : "^5.4"
+
+  },
+  "require-dev" : {
+ "projet/container" : "^5.4"
+
+  },
+  "autolad" : {
+    "files" : [],
+    "classmap" : [],
+    "psr-4" : []
+  },
+  "autolad-dev" : {
+
+  }
+
+}

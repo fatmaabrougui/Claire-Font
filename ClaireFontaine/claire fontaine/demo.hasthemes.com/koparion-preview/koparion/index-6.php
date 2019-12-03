@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 
 
-<!-- Mirrored from demo.hasthemes.com/koparion-preview/koparion/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Nov 2019 17:48:00 GMT -->
+<!-- Mirrored from demo.hasthemes.com/koparion-preview/koparion/index-6.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Nov 2019 17:48:00 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -68,9 +68,9 @@
                     <div class="col-lg-6 col-md-6 col-12">
                         <div class="account-area text-right">
                             <ul>
-                                <li><a href="my-account.html">My Account</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="login.html">Sign in</a></li>
+                                <li><a href="my-account.php">My Account</a></li>
+                                <li><a href="checkout.php">Checkout</a></li>
+                                <li><a href="login.php">Sign in</a></li>
                             </ul>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="col-lg-6 col-md-4 col-12">
                         <div class="logo-area text-center logo-xs-mrg">
-                            <a href="index.html"><img src="img/logo/5.png" alt="logo" /></a>
+                            <a href="index.php"><img src="img/logo/5.png" alt="logo" /></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-12">
@@ -131,8 +131,8 @@
                                             <h5>Total <span>£12.00</span></h5>
                                         </div>
                                         <div class="cart-bottom">
-                                            <a class="view-cart" href="cart.html">view cart</a>
-                                            <a href="checkout.html">Check out</a>
+                                            <a class="view-cart" href="cart.php">view cart</a>
+                                            <a href="checkout.php">Check out</a>
                                         </div>
                                     </div>
                                 </li>
@@ -152,139 +152,139 @@
                             <div class="menu-area">
                                 <nav>
                                     <ul>
-                                        <li class="active"><a href="index.html">Home<i class="fa fa-angle-down"></i></a>
+                                        <li class="active"><a href="index.php">Home<i class="fa fa-angle-down"></i></a>
                                             <div class="sub-menu">
                                                 <ul>
-                                                    <li><a href="index.html">Home-1</a></li>
-                                                    <li><a href="index-2.html">Home-2</a></li>
-                                                    <li><a href="index-3.html">Home-3</a></li>
-                                                    <li><a href="index-4.html">Home-4</a></li>
-                                                    <li><a href="index-5.html">Home-5</a></li>
-                                                    <li><a href="index-6.html">Home-6</a></li>
-                                                    <li><a href="index-7.html">Home-7</a></li>
+                                                    <li><a href="index.php">Home-1</a></li>
+                                                    <li><a href="index-2.php">Home-2</a></li>
+                                                    <li><a href="index-3.php">Home-3</a></li>
+                                                    <li><a href="index-4.php">Home-4</a></li>
+                                                    <li><a href="index-5.php">Home-5</a></li>
+                                                    <li><a href="index-6.php">Home-6</a></li>
+                                                    <li><a href="index-7.php">Home-7</a></li>
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li><a href="product-details.html">Book<i class="fa fa-angle-down"></i></a>
+                                        <li><a href="product-details.php">Book<i class="fa fa-angle-down"></i></a>
                                             <div class="mega-menu">
                                                 <span>
                                                     <a href="#" class="title">Jackets</a>
-                                                    <a href="shop.html">Tops & Tees</a>
-                                                    <a href="shop.html">Polo Short Sleeve</a>
-                                                    <a href="shop.html">Graphic T-Shirts</a>
-                                                    <a href="shop.html">Jackets & Coats</a>
-                                                    <a href="shop.html">Fashion Jackets</a>
+                                                    <a href="shop.php">Tops & Tees</a>
+                                                    <a href="shop.php">Polo Short Sleeve</a>
+                                                    <a href="shop.php">Graphic T-Shirts</a>
+                                                    <a href="shop.php">Jackets & Coats</a>
+                                                    <a href="shop.php">Fashion Jackets</a>
                                                 </span>
                                                 <span>
                                                     <a href="#" class="title">weaters</a>
-                                                    <a href="shop.html">Crochet</a>
-                                                    <a href="shop.html">Sleeveless</a>
-                                                    <a href="shop.html">Stripes</a>
-                                                    <a href="shop.html">Sweaters</a>
-                                                    <a href="shop.html">hoodies</a>
+                                                    <a href="shop.php">Crochet</a>
+                                                    <a href="shop.php">Sleeveless</a>
+                                                    <a href="shop.php">Stripes</a>
+                                                    <a href="shop.php">Sweaters</a>
+                                                    <a href="shop.php">hoodies</a>
                                                 </span>
                                                 <span>
                                                     <a href="#" class="title">Bottoms</a>
-                                                    <a href="shop.html">Heeled sandals</a>
-                                                    <a href="shop.html">Polo Short Sleeve</a>
-                                                    <a href="shop.html">Flat sandals</a>
-                                                    <a href="shop.html">Short Sleeve</a>
-                                                    <a href="shop.html">Long Sleeve</a>
+                                                    <a href="shop.php">Heeled sandals</a>
+                                                    <a href="shop.php">Polo Short Sleeve</a>
+                                                    <a href="shop.php">Flat sandals</a>
+                                                    <a href="shop.php">Short Sleeve</a>
+                                                    <a href="shop.php">Long Sleeve</a>
                                                 </span>
                                                 <span>
                                                     <a href="#" class="title">Jeans Pants</a>
-                                                    <a href="shop.html">Polo Short Sleeve</a>
-                                                    <a href="shop.html">Sleeveless</a>
-                                                    <a href="shop.html">Graphic T-Shirts</a>
-                                                    <a href="shop.html">Hoodies</a>
-                                                    <a href="shop.html">Jackets</a>
+                                                    <a href="shop.php">Polo Short Sleeve</a>
+                                                    <a href="shop.php">Sleeveless</a>
+                                                    <a href="shop.php">Graphic T-Shirts</a>
+                                                    <a href="shop.php">Hoodies</a>
+                                                    <a href="shop.php">Jackets</a>
                                                 </span>
                                             </div>
                                         </li>
-                                        <li><a href="product-details.html">Audio books<i class="fa fa-angle-down"></i></a>
+                                        <li><a href="product-details.php">Audio books<i class="fa fa-angle-down"></i></a>
                                             <div class="mega-menu">
                                                 <span>
                                                     <a href="#" class="title">Shirts</a>
-                                                    <a href="shop.html">Tops & Tees</a>
-                                                    <a href="shop.html">Sweaters </a>
-                                                    <a href="shop.html">Hoodies</a>
-                                                    <a href="shop.html">Jackets & Coats</a>
+                                                    <a href="shop.php">Tops & Tees</a>
+                                                    <a href="shop.php">Sweaters </a>
+                                                    <a href="shop.php">Hoodies</a>
+                                                    <a href="shop.php">Jackets & Coats</a>
                                                 </span>
                                                 <span>
                                                     <a href="#" class="title">Tops & Tees</a>
-                                                    <a href="shop.html">Long Sleeve </a>
-                                                    <a href="shop.html">Short Sleeve</a>
-                                                    <a href="shop.html">Polo Short Sleeve</a>
-                                                    <a href="shop.html">Sleeveless</a>
+                                                    <a href="shop.php">Long Sleeve </a>
+                                                    <a href="shop.php">Short Sleeve</a>
+                                                    <a href="shop.php">Polo Short Sleeve</a>
+                                                    <a href="shop.php">Sleeveless</a>
                                                 </span>
                                                 <span>
                                                     <a href="#" class="title">Jackets</a>
-                                                    <a href="shop.html">Sweaters</a>
-                                                    <a href="shop.html">Hoodies</a>
-                                                    <a href="shop.html">Wedges</a>
-                                                    <a href="shop.html">Vests</a>
+                                                    <a href="shop.php">Sweaters</a>
+                                                    <a href="shop.php">Hoodies</a>
+                                                    <a href="shop.php">Wedges</a>
+                                                    <a href="shop.php">Vests</a>
                                                 </span>
                                                 <span>
                                                     <a href="#" class="title">Jeans Pants</a>
-                                                    <a href="shop.html">Polo Short Sleeve</a>
-                                                    <a href="shop.html">Sleeveless</a>
-                                                    <a href="shop.html">Graphic T-Shirts</a>
-                                                    <a href="shop.html">Hoodies</a>
+                                                    <a href="shop.php">Polo Short Sleeve</a>
+                                                    <a href="shop.php">Sleeveless</a>
+                                                    <a href="shop.php">Graphic T-Shirts</a>
+                                                    <a href="shop.php">Hoodies</a>
                                                 </span>
                                             </div>
                                         </li>
-                                        <li><a href="product-details.html">children’s books<i class="fa fa-angle-down"></i></a>
+                                        <li><a href="product-details.php">children’s books<i class="fa fa-angle-down"></i></a>
                                             <div class="mega-menu mega-menu-2">
                                                 <span>
                                                     <a href="#" class="title">Tops</a>
-                                                    <a href="shop.html">Shirts</a>
-                                                    <a href="shop.html">Florals</a>
-                                                    <a href="shop.html">Crochet</a>
-                                                    <a href="shop.html">Stripes</a>
+                                                    <a href="shop.php">Shirts</a>
+                                                    <a href="shop.php">Florals</a>
+                                                    <a href="shop.php">Crochet</a>
+                                                    <a href="shop.php">Stripes</a>
                                                 </span>
                                                 <span>
                                                     <a href="#" class="title">Bottoms</a>
-                                                    <a href="shop.html">Shorts</a>
-                                                    <a href="shop.html">Dresses</a>
-                                                    <a href="shop.html">Trousers</a>
-                                                    <a href="shop.html">Jeans</a>
+                                                    <a href="shop.php">Shorts</a>
+                                                    <a href="shop.php">Dresses</a>
+                                                    <a href="shop.php">Trousers</a>
+                                                    <a href="shop.php">Jeans</a>
                                                 </span>
                                                 <span>
                                                     <a href="#" class="title">Shoes</a>
-                                                    <a href="shop.html">Heeled sandals</a>
-                                                    <a href="shop.html">Flat sandals</a>
-                                                    <a href="shop.html">Wedges</a>
-                                                    <a href="shop.html">Ankle boots</a>
+                                                    <a href="shop.php">Heeled sandals</a>
+                                                    <a href="shop.php">Flat sandals</a>
+                                                    <a href="shop.php">Wedges</a>
+                                                    <a href="shop.php">Ankle boots</a>
                                                 </span>
                                             </div>
                                         </li>
                                         <li><a href="product-details">pages<i class="fa fa-angle-down"></i></a>
                                             <div class="sub-menu sub-menu-2">
                                                 <ul>
-                                                    <li><a href="shop.html">shop</a></li>
-                                                    <li><a href="shop-list.html">shop list view</a></li>
-                                                    <li><a href="product-details.html">product-details</a></li>
-                                                    <li><a href="product-details-affiliate.html">product-affiliate</a></li>
-                                                    <li><a href="blog.html">blog</a></li>
-                                                    <li><a href="blog-details.html">blog-details</a></li>
-                                                    <li><a href="contact.html">contact</a></li>
-                                                    <li><a href="about.html">about</a></li>
-                                                    <li><a href="login.html">login</a></li>
-                                                    <li><a href="register.html">register</a></li>
-                                                    <li><a href="my-account.html">my-account</a></li>
-                                                    <li><a href="cart.html">cart</a></li>
-                                                    <li><a href="compare.html">compare</a></li>
-                                                    <li><a href="checkout.html">checkout</a></li>
-                                                    <li><a href="wishlist.html">wishlist</a></li>
-                                                    <li><a href="404.html">404 Page</a></li>
+                                                    <li><a href="shop.php">shop</a></li>
+                                                    <li><a href="shop-list.php">shop list view</a></li>
+                                                    <li><a href="product-details.php">product-details</a></li>
+                                                    <li><a href="product-details-affiliate.php">product-affiliate</a></li>
+                                                    <li><a href="blog.php">blog</a></li>
+                                                    <li><a href="blog-details.php">blog-details</a></li>
+                                                    <li><a href="contact.php">contact</a></li>
+                                                    <li><a href="about.php">about</a></li>
+                                                    <li><a href="login.php">login</a></li>
+                                                    <li><a href="register.php">register</a></li>
+                                                    <li><a href="my-account.php">my-account</a></li>
+                                                    <li><a href="cart.php">cart</a></li>
+                                                    <li><a href="compare.php">compare</a></li>
+                                                    <li><a href="checkout.php">checkout</a></li>
+                                                    <li><a href="wishlist.php">wishlist</a></li>
+                                                    <li><a href="404.php">404 Page</a></li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li><a href="#">blog<i class="fa fa-angle-down"></i></a>
                                             <div class="sub-menu">
                                                 <ul>
-                                                    <li><a href="blog.html">blog</a></li>
-                                                    <li><a href="blog-details.html">blog-details</a></li>
+                                                    <li><a href="blog.php">blog</a></li>
+                                                    <li><a href="blog-details.php">blog-details</a></li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -292,7 +292,7 @@
                                 </nav>
                             </div>
                             <div class="safe-area">
-                                <a href="product-details.html">sales off</a>
+                                <a href="product-details.php">sales off</a>
                             </div>
                         </div>
                     </div>
@@ -308,101 +308,101 @@
                         <div class="mobile-menu">
                             <nav id="mobile-menu-active">
                                 <ul id="nav">
-                                    <li><a href="index.html">Home</a>
+                                    <li><a href="index.php">Home</a>
                                         <ul>
-                                            <li><a href="index.html">Home-1</a></li>
-                                            <li><a href="index-2.html">Home-2</a></li>
-                                            <li><a href="index-3.html">Home-3</a></li>
-                                            <li><a href="index-4.html">Home-4</a></li>
-                                            <li><a href="index-5.html">Home-5</a></li>
-                                            <li><a href="index-6.html">Home-6</a></li>
-                                            <li><a href="index-7.html">Home-7</a></li>
+                                            <li><a href="index.php">Home-1</a></li>
+                                            <li><a href="index-2.php">Home-2</a></li>
+                                            <li><a href="index-3.php">Home-3</a></li>
+                                            <li><a href="index-4.php">Home-4</a></li>
+                                            <li><a href="index-5.php">Home-5</a></li>
+                                            <li><a href="index-6.php">Home-6</a></li>
+                                            <li><a href="index-7.php">Home-7</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="product-details.html">Book</a>
+                                    <li><a href="product-details.php">Book</a>
                                         <ul>
-                                            <li><a href="shop.html">Tops & Tees</a></li>
-                                            <li><a href="shop.html">Polo Short Sleeve</a></li>
-                                            <li><a href="shop.html">Graphic T-Shirts</a></li>
-                                            <li><a href="shop.html">Jackets & Coats</a></li>
-                                            <li><a href="shop.html">Fashion Jackets</a></li>
-                                            <li><a href="shop.html">Crochet</a></li>
-                                            <li><a href="shop.html">Sleeveless</a></li>
-                                            <li><a href="shop.html">Stripes</a></li>
-                                            <li><a href="shop.html">Sweaters</a></li>
-                                            <li><a href="shop.html">hoodies</a></li>
-                                            <li><a href="shop.html">Heeled sandals</a></li>
-                                            <li><a href="shop.html">Polo Short Sleeve</a></li>
-                                            <li><a href="shop.html">Flat sandals</a></li>
-                                            <li><a href="shop.html">Short Sleeve</a></li>
-                                            <li><a href="shop.html">Long Sleeve</a></li>
-                                            <li><a href="shop.html">Polo Short Sleeve</a></li>
-                                            <li><a href="shop.html">Sleeveless</a></li>
-                                            <li><a href="shop.html">Graphic T-Shirts</a></li>
-                                            <li><a href="shop.html">Hoodies</a></li>
-                                            <li><a href="shop.html">Jackets</a></li>
+                                            <li><a href="shop.php">Tops & Tees</a></li>
+                                            <li><a href="shop.php">Polo Short Sleeve</a></li>
+                                            <li><a href="shop.php">Graphic T-Shirts</a></li>
+                                            <li><a href="shop.php">Jackets & Coats</a></li>
+                                            <li><a href="shop.php">Fashion Jackets</a></li>
+                                            <li><a href="shop.php">Crochet</a></li>
+                                            <li><a href="shop.php">Sleeveless</a></li>
+                                            <li><a href="shop.php">Stripes</a></li>
+                                            <li><a href="shop.php">Sweaters</a></li>
+                                            <li><a href="shop.php">hoodies</a></li>
+                                            <li><a href="shop.php">Heeled sandals</a></li>
+                                            <li><a href="shop.php">Polo Short Sleeve</a></li>
+                                            <li><a href="shop.php">Flat sandals</a></li>
+                                            <li><a href="shop.php">Short Sleeve</a></li>
+                                            <li><a href="shop.php">Long Sleeve</a></li>
+                                            <li><a href="shop.php">Polo Short Sleeve</a></li>
+                                            <li><a href="shop.php">Sleeveless</a></li>
+                                            <li><a href="shop.php">Graphic T-Shirts</a></li>
+                                            <li><a href="shop.php">Hoodies</a></li>
+                                            <li><a href="shop.php">Jackets</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="product-details.html">Audio books</a>
+                                    <li><a href="product-details.php">Audio books</a>
                                         <ul>
-                                            <li><a href="shop.html">Tops & Tees</a></li>
-                                            <li><a href="shop.html">Sweaters</a></li>
-                                            <li><a href="shop.html">Hoodies</a></li>
-                                            <li><a href="shop.html">Jackets & Coats</a></li>
-                                            <li><a href="shop.html">Long Sleeve</a></li>
-                                            <li><a href="shop.html">Short Sleeve</a></li>
-                                            <li><a href="shop.html">Polo Short Sleeve</a></li>
-                                            <li><a href="shop.html">Sleeveless</a></li>
-                                            <li><a href="shop.html">Sweaters</a></li>
-                                            <li><a href="shop.html">Hoodies</a></li>
-                                            <li><a href="shop.html">Wedges</a></li>
-                                            <li><a href="shop.html">Vests</a></li>
-                                            <li><a href="shop.html">Polo Short Sleeve</a></li>
-                                            <li><a href="shop.html">Sleeveless</a></li>
-                                            <li><a href="shop.html">Graphic T-Shirts</a></li>
-                                            <li><a href="shop.html">Hoodies</a></li>
+                                            <li><a href="shop.php">Tops & Tees</a></li>
+                                            <li><a href="shop.php">Sweaters</a></li>
+                                            <li><a href="shop.php">Hoodies</a></li>
+                                            <li><a href="shop.php">Jackets & Coats</a></li>
+                                            <li><a href="shop.php">Long Sleeve</a></li>
+                                            <li><a href="shop.php">Short Sleeve</a></li>
+                                            <li><a href="shop.php">Polo Short Sleeve</a></li>
+                                            <li><a href="shop.php">Sleeveless</a></li>
+                                            <li><a href="shop.php">Sweaters</a></li>
+                                            <li><a href="shop.php">Hoodies</a></li>
+                                            <li><a href="shop.php">Wedges</a></li>
+                                            <li><a href="shop.php">Vests</a></li>
+                                            <li><a href="shop.php">Polo Short Sleeve</a></li>
+                                            <li><a href="shop.php">Sleeveless</a></li>
+                                            <li><a href="shop.php">Graphic T-Shirts</a></li>
+                                            <li><a href="shop.php">Hoodies</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="product-details.html">children’s books</a>
+                                    <li><a href="product-details.php">children’s books</a>
                                         <ul>
-                                            <li><a href="shop.html">Shirts</a></li>
-                                            <li><a href="shop.html">Florals</a></li>
-                                            <li><a href="shop.html">Crochet</a></li>
-                                            <li><a href="shop.html">Stripes</a></li>
-                                            <li><a href="shop.html">Shorts</a></li>
-                                            <li><a href="shop.html">Dresses</a></li>
-                                            <li><a href="shop.html">Trousers</a></li>
-                                            <li><a href="shop.html">Jeans</a></li>
-                                            <li><a href="shop.html">Heeled sandals</a></li>
-                                            <li><a href="shop.html">Flat sandals</a></li>
-                                            <li><a href="shop.html">Wedges</a></li>
-                                            <li><a href="shop.html">Ankle boots</a></li>
+                                            <li><a href="shop.php">Shirts</a></li>
+                                            <li><a href="shop.php">Florals</a></li>
+                                            <li><a href="shop.php">Crochet</a></li>
+                                            <li><a href="shop.php">Stripes</a></li>
+                                            <li><a href="shop.php">Shorts</a></li>
+                                            <li><a href="shop.php">Dresses</a></li>
+                                            <li><a href="shop.php">Trousers</a></li>
+                                            <li><a href="shop.php">Jeans</a></li>
+                                            <li><a href="shop.php">Heeled sandals</a></li>
+                                            <li><a href="shop.php">Flat sandals</a></li>
+                                            <li><a href="shop.php">Wedges</a></li>
+                                            <li><a href="shop.php">Ankle boots</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="product-details.html">Pages</a>
+                                    <li><a href="product-details.php">Pages</a>
                                         <ul>
-                                            <li><a href="shop.html">shop</a></li>
-                                            <li><a href="shop-list.html">shop list view</a></li>
-                                            <li><a href="product-details.html">product-details</a></li>
-                                            <li><a href="product-details-affiliate.html">product-affiliate</a></li>
-                                            <li><a href="blog.html">blog</a></li>
-                                            <li><a href="blog-details.html">blog-details</a></li>
-                                            <li><a href="contact.html">contact</a></li>
-                                            <li><a href="about.html">about</a></li>
-                                            <li><a href="login.html">login</a></li>
-                                            <li><a href="register.html">register</a></li>
-                                            <li><a href="my-account.html">my-account</a></li>
-                                            <li><a href="cart.html">cart</a></li>
-                                            <li><a href="compare.html">compare</a></li>
-                                            <li><a href="checkout.html">checkout</a></li>
-                                            <li><a href="wishlist.html">wishlist</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
+                                            <li><a href="shop.php">shop</a></li>
+                                            <li><a href="shop-list.php">shop list view</a></li>
+                                            <li><a href="product-details.php">product-details</a></li>
+                                            <li><a href="product-details-affiliate.php">product-affiliate</a></li>
+                                            <li><a href="blog.php">blog</a></li>
+                                            <li><a href="blog-details.php">blog-details</a></li>
+                                            <li><a href="contact.php">contact</a></li>
+                                            <li><a href="about.php">about</a></li>
+                                            <li><a href="login.php">login</a></li>
+                                            <li><a href="register.php">register</a></li>
+                                            <li><a href="my-account.php">my-account</a></li>
+                                            <li><a href="cart.php">cart</a></li>
+                                            <li><a href="compare.php">compare</a></li>
+                                            <li><a href="checkout.php">checkout</a></li>
+                                            <li><a href="wishlist.php">wishlist</a></li>
+                                            <li><a href="404.php">404 Page</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">blog</a>
                                         <ul>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-details.html">blog-details</a></li>
+                                            <li><a href="blog.php">Blog</a></li>
+                                            <li><a href="blog-details.php">blog-details</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -541,7 +541,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -588,7 +588,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -636,7 +636,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -683,7 +683,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -732,7 +732,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -778,7 +778,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -827,7 +827,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -874,7 +874,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -923,7 +923,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -971,7 +971,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1020,7 +1020,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1068,7 +1068,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1121,7 +1121,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1168,7 +1168,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1216,7 +1216,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1263,7 +1263,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1312,7 +1312,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1358,7 +1358,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1407,7 +1407,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1454,7 +1454,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1503,7 +1503,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1551,7 +1551,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1600,7 +1600,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1648,7 +1648,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1701,7 +1701,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1748,7 +1748,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1796,7 +1796,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1843,7 +1843,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1892,7 +1892,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1938,7 +1938,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1987,7 +1987,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -2034,7 +2034,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -2083,7 +2083,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -2131,7 +2131,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -2180,7 +2180,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -2228,7 +2228,7 @@
                                     </div>
                                     <div class="add-to-link">
                                         <ul>
-                                            <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -2482,14 +2482,14 @@
                     <div class="col-lg-12">
                         <div class="single-post">
                             <div class="post-img">
-                                <a href="blog-details.html"><img src="img/post/2.jpg" alt="post" /></a>
+                                <a href="blog-details.php"><img src="img/post/2.jpg" alt="post" /></a>
                                 <div class="blog-date-time">
                                     <span class="day-time">06</span>
                                     <span class="moth-time">Dec</span>
                                 </div>
                             </div>
                             <div class="post-content">
-                                <h3><a href="blog-details.html">Interdum et malesuada</a></h3>
+                                <h3><a href="blog-details.php">Interdum et malesuada</a></h3>
                                 <span class="meta-author"> Demo koparion </span>
                                 <p>Discover five of our favourite dresses from our new collection that are destined to be worn and loved immediately.</p>
                             </div>
@@ -2498,14 +2498,14 @@
                     <div class="col-lg-12">
                         <div class="single-post">
                             <div class="post-img">
-                                <a href="blog-details.html"><img src="img/post/3.jpg" alt="post" /></a>
+                                <a href="blog-details.php"><img src="img/post/3.jpg" alt="post" /></a>
                                 <div class="blog-date-time">
                                     <span class="day-time">07</span>
                                     <span class="moth-time">Dec</span>
                                 </div>
                             </div>
                             <div class="post-content">
-                                <h3><a href="blog-details.html">What is Bootstrap?</a></h3>
+                                <h3><a href="blog-details.php">What is Bootstrap?</a></h3>
                                 <span class="meta-author"> Demo koparion </span>
                                 <p>Discover five of our favourite dresses from our new collection that are destined to be worn and loved immediately.</p>
                             </div>
@@ -2514,14 +2514,14 @@
                     <div class="col-lg-12">
                         <div class="single-post">
                             <div class="post-img">
-                                <a href="blog-details.html"><img src="img/post/4.jpg" alt="post" /></a>
+                                <a href="blog-details.php"><img src="img/post/4.jpg" alt="post" /></a>
                                 <div class="blog-date-time">
                                     <span class="day-time">08</span>
                                     <span class="moth-time">Dec</span>
                                 </div>
                             </div>
                             <div class="post-content">
-                                <h3><a href="blog-details.html">Etiam eros massa</a></h3>
+                                <h3><a href="blog-details.php">Etiam eros massa</a></h3>
                                 <span class="meta-author"> Demo koparion </span>
                                 <p>Discover five of our favourite dresses from our new collection that are destined to be worn and loved immediately.</p>
                             </div>
@@ -2627,7 +2627,7 @@
                                     </div>
                                     <div class="footer-mid-menu">
                                         <ul>
-                                            <li><a href="about.html">About us</a></li>
+                                            <li><a href="about.php">About us</a></li>
                                             <li><a href="#">Prices drop </a></li>
                                             <li><a href="#">New products</a></li>
                                             <li><a href="#">Best sales</a></li>
@@ -2642,10 +2642,10 @@
                                     </div>
                                     <div class="footer-mid-menu">
                                         <ul>
-                                            <li><a href="contact.html">Contact us</a></li>
+                                            <li><a href="contact.php">Contact us</a></li>
                                             <li><a href="#">Sitemap</a></li>
                                             <li><a href="#">Stores</a></li>
-                                            <li><a href="register.html">My account </a></li>
+                                            <li><a href="register.php">My account </a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -2657,7 +2657,7 @@
                                     </div>
                                     <div class="footer-mid-menu">
                                         <ul>
-                                            <li><a href="contact.html">Addresses</a></li>
+                                            <li><a href="contact.php">Addresses</a></li>
                                             <li><a href="#">Credit slips </a></li>
                                             <li><a href="#"> Orders</a></li>
                                             <li><a href="#">Personal info</a></li>
@@ -2813,5 +2813,5 @@
 </body>
 
 
-<!-- Mirrored from demo.hasthemes.com/koparion-preview/koparion/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Nov 2019 17:48:03 GMT -->
+<!-- Mirrored from demo.hasthemes.com/koparion-preview/koparion/index-6.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Nov 2019 17:48:03 GMT -->
 </html>

@@ -1,30 +1,3 @@
-<?php
-session_start();
-
-$bdd = new PDO('mysql:host=127.0.0.1;dbname=clairefontaine', 'root', '');
-
-if(isset($_POST['formconnexion'])) {
-   $mailconnect = htmlspecialchars($_POST['mailconnect']);
-   $mdpconnect = sha1($_POST['mdpconnect']);
-   if(!empty($mailconnect) AND !empty($mdpconnect)) {
-      $requser = $bdd->prepare("SELECT * FROM client WHERE email_client = ? AND pwd_client = ?");
-      $requser->execute(array($mailconnect, $mdpconnect));
-      $userexist = $requser->rowCount();
-      if($userexist == 1) {
-         $userinfo = $requser->fetch();
-         $_SESSION['id_client'] = $userinfo['id_client'];
-         $_SESSION['nom_client'] = $userinfo['nom_client'];
-         $_SESSION['prenom_client'] = $userinfo['nom_client'];
-         $_SESSION['email_client'] = $userinfo['email_client'];
-         header("Location: profil.php?id_client=".$_SESSION['id_client']);
-      } else {
-         $erreur = "Mauvais email_client ou mot de passe !";
-      }
-   } else {
-      $erreur = "Tous les champs doivent être complétés !";
-   }
-}
-?>
 <!doctype html>
 <html class="no-js" lang="en">
     
@@ -464,12 +437,12 @@ if(isset($_POST['formconnexion'])) {
 					<div class="offset-lg-3 col-lg-6 col-md-12 col-12">
 						<div class="login-form">
 							<div class="single-login">
-								<label>Adresse Email<span>*</span></label>
-           						 <input type="email" name="mailconnect" placeholder="Adresse Mail" />
+								<label>Username or email<span>*</span></label>
+								<input type="text" />
 							</div>
 							<div class="single-login">
-								<label>Mot de passe <span>*</span></label>
-            					<input type="password" name="mdpconnect" placeholder="Mot de passe" />
+								<label>Passwords <span>*</span></label>
+								<input type="text" />
 							</div>
 							<div class="single-login single-login-2">
 								<a href="#">login</a>
@@ -477,11 +450,6 @@ if(isset($_POST['formconnexion'])) {
 								<span>Remember me</span>
 							</div>
 							<a href="#">Lost your password?</a>
-							         <?php
-         if(isset($erreur)) {
-            echo '<font color="red">'.$erreur."</font>";
-         }
-         ?>
 						</div>
 					</div>
 				</div>

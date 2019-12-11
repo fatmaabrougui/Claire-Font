@@ -4,23 +4,27 @@ include_once "../../config.php";
 class produitC {
 
 	function ajouterProduit ($produit){
-		$sql="insert into produit (id_produit,categorie,description,prix,image) values (:id_produit,:categorie,:description,:prix,:image)";
+		$sql="insert into produit (id_produit,titre,categorie,description,prix,image,stock) values (:id_produit,:titre,:categorie,:description,:prix,:image,:stock)";
 		$db = config::getConnexion();
 
         $req=$db->prepare($sql);
 
         $id_produit=$produit->getId_produit();
+				$titre=$produit->getTitre();
         $description=$produit->getDescription();
 		$prix=$produit->getPrix();
         $image=$produit->getImage();
 		$categorie=$produit->getCategorie();
+		$stock=$produit->getStock();
 
         try{
             $req->bindValue(':id_produit',$id_produit);
+						$req->bindValue(':titre',$titre);
 		$req->bindValue(':description',$description);
 		$req->bindValue(':prix',$prix);
 		$req->bindValue(':image',$image);
 		$req->bindValue(':categorie',$categorie);
+			$req->bindValue(':stock',$stock);
 
 
                  $req->execute();
@@ -60,17 +64,19 @@ class produitC {
             die('Erreur: '.$e->getMessage());
         }
 	}
-	function modifierproduit($id_produit,$description,$prix,$categorie){
+	function modifierproduit($id_produit,$titre,$description,$prix,$categorie,$stock){
 	    $img='';
 	 //   if($produit->getImage()){$img=",image='".$produit->getImage()."'";}
-		$sql="UPDATE produit SET id_produit=:id_produit,description=:description,prix=:prix,categorie=:categorie WHERE id_produit=:id_produit";
+		$sql="UPDATE produit SET id_produit=:id_produit,titre=:titre,description=:description,prix=:prix,categorie=:categorie,stock=:stock WHERE id_produit=:id_produit";
 $db = config::getConnexion();
         $req=$db->prepare($sql);
     try{
 			$req->bindValue(':id_produit',$id_produit);
+			$req->bindValue(':titre',$titre);
 $req->bindValue(':description',$description);
 $req->bindValue(':prix',$prix);
 $req->bindValue(':categorie',$categorie);
+$req->bindValue(':stock',$stock);
 
 
             $s=$req->execute();
@@ -95,6 +101,34 @@ $req->bindValue(':categorie',$categorie);
             die('Erreur: '.$e->getMessage());
         }
 	}
+	function valableProduit($id,$stock)
+		  {
+
+			$sql="UPDATE produit SET stock=:stock where id_produit=:id";
+			$db = config::getConnexion();
+			$req=$db->prepare($sql);
+			$req->bindValue(':stock',$stock);
+			$req->bindValue(':id',$id);
+			$req=$req->execute();
+
+		}
+
+		function trierproduitprix()
+		{
+	  		$db = config::getConnexion();
+	       		$sql="SELECT * FROM produit order by prix";
+				  // $sql="SELECT * from produit where description LIKE '%$foo%' ";
+			try{
+	 		$req=$db->prepare($sql);
+	 	    $req->execute();
+	 		$produit= $req->fetchALL(PDO::FETCH_OBJ);
+			return $produit;
+			}
+	        catch (Exception $e){
+	            die('Erreur: '.$e->getMessage());
+	        }
+		}
+
 
 
 }

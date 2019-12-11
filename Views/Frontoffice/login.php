@@ -482,6 +482,7 @@ if(isset($_POST['formconnexion'])) {
             echo '<font color="red">'.$erreur."</font>";
          }
          ?>
+							<a href="<?php echo $login_url; ?>"><img src="img/logo/facebook.png" width="200px"></a><br>
 							<a href="#">Lost your password?</a>
 
 						</form>

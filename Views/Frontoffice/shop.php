@@ -362,7 +362,6 @@
 				</div>
 			</div>
 		</div>
-    aaaaaaaaaaaaaaaaaaaaaa
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -712,8 +711,8 @@
 												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 											</div>
 											<div class="add-to-link">
-												<ul>
-													<li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
+				<ul>
+													<li><a href="../Frontoffice/resblog/blogadmin/index.php" title="blog"><i class="fa fa-external-link"></i></a></li>
 												</ul>
 											</div>
 										</div>
@@ -811,9 +810,9 @@
 													<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 												</div>
 												<div class="add-to-link">
-													<ul>
-														<li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
-													</ul>
+												<ul>
+													<li><a href="../Frontoffice/resblog/blogadmin/index.php" title="blog"><i class="fa fa-external-link"></i></a></li>
+												</ul>
 												</div>
 											</div>
 										</div>

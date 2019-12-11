@@ -9,15 +9,17 @@ if(isset($_POST['formconnexion'])) {
    $mdpconnect = $_POST['mdpconnect'];
    if(!empty($mailconnect) AND !empty($mdpconnect)) {
       $requser = $bdd->prepare("SELECT * FROM client WHERE email_client = ? AND pwd_client = ?");
+      echo "string";
       $requser->execute(array($mailconnect, $mdpconnect));
       $userexist = $requser->rowCount();
       if($userexist == 1) {
+      	echo "lol";
          $userinfo = $requser->fetch();
          $_SESSION['id_client'] = $userinfo['id_client'];
          $_SESSION['nom_client'] = $userinfo['nom_client'];
          $_SESSION['prenom_client'] = $userinfo['prenom_client'];
          $_SESSION['email_client'] = $userinfo['email_client'];
-         header("Location: localhost\projetwebCRUD\views\profil.php?id_client=".$_SESSION['id_client']);
+         header("Location: my-account.php?id_client=".$_SESSION['id_client']);
       } else {
          $erreur = "Mauvais email_client ou mot de passe !";
       }

@@ -1,4 +1,4 @@
-
+<?php require './fb-init.php'; ?>
             <?PHP
 
             class config {

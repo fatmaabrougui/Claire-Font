@@ -576,9 +576,12 @@
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-12 col-12 order-lg-2 order-1">
-					<div class="category-image mb-30">
-						<a href="#"><img src="img/banner/32.jpg" alt="banner" /></a>
-					</div>
+					<div class="category-image mb-30">	
+					  <?php
+
+                include_once "slideshow.php";
+
+            ?>					</div>
 					<div class="section-title-5 mb-30">
 						<h2>Book</h2>
 					</div>

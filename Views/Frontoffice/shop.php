@@ -1,5 +1,5 @@
 <?php require './fb-init.php'; ?>
-            <?PHP
+<?PHP
 
             class config {
                 private static $instance = NULL;
@@ -7,7 +7,7 @@
                 public static function getConnexion() {
                   if (!isset(self::$instance)) {
                     try{
-                    self::$instance = new PDO('mysql:host=localhost;dbname=clairefontaine', 'root', '');
+                    self::$instance = new PDO('mysql:host=localhost;dbname=claire_fontaine', 'root', '');
                     self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                     }catch(Exception $e){
                         die('Erreur: '.$e->getMessage());
@@ -31,7 +31,23 @@
                 }
             }
         }
+        class categorieC {
 
+
+
+
+        	function affichercategories(){
+        		//$sql="SElECT * From categorie e inner join formationphp.categorie a on e.id_cat= a.id_cat";
+        		$sql="SElECT * From categorie";
+        		$db = config::getConnexion();
+        		try{
+        		$liste=$db->query($sql);
+        		return $liste;
+        		}
+                catch (Exception $e){
+                    die('Erreur: '.$e->getMessage());
+                }
+        	}}
 
 
 
@@ -45,7 +61,7 @@
 <html class="no-js" lang="en">
 
 
-<!-- Mirrored from shop.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Nov 2019 17:48:07 GMT -->
+<!-- Mirrored from shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Nov 2019 17:48:07 GMT -->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -117,9 +133,9 @@
 					<div class="col-lg-6 col-md-6 col-12">
 						<div class="account-area text-right">
 							<ul>
-								<li><a href="my-account.php">My Account</a></li>
-								<li><a href="checkout.php">Checkout</a></li>
-								<li><a href="login.php">Sign in</a></li>
+								<li><a href="my-account.html">My Account</a></li>
+								<li><a href="checkout.html">Checkout</a></li>
+								<li><a href="login.html">Sign in</a></li>
 							</ul>
 						</div>
 					</div>
@@ -141,7 +157,7 @@
 					</div>
 					<div class="col-lg-6 col-md-4 col-12">
 						<div class="logo-area text-center logo-xs-mrg">
-							<a href="index.php"><img src="img/logo/logo.png" alt="logo" /></a>
+							<a href="index.html"><img src="img/logo/logo.png" alt="logo" /></a>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-12">
@@ -180,8 +196,8 @@
 											<h5>Total <span>£12.00</span></h5>
 										</div>
 										<div class="cart-bottom">
-											<a class="view-cart" href="cart.php">view cart</a>
-											<a href="checkout.php">Check out</a>
+											<a class="view-cart" href="cart.html">view cart</a>
+											<a href="checkout.html">Check out</a>
 										</div>
 									</div>
 								</li>
@@ -200,139 +216,139 @@
 						<div class="menu-area">
 							<nav>
 								<ul>
-									<li class="active"><a href="index.php">Home<i class="fa fa-angle-down"></i></a>
+									<li class="active"><a href="index.html">Home<i class="fa fa-angle-down"></i></a>
 										<div class="sub-menu">
 											<ul>
-												<li><a href="index.php">Home-1</a></li>
-												<li><a href="index-2.php">Home-2</a></li>
-												<li><a href="index-3.php">Home-3</a></li>
-												<li><a href="index-4.php">Home-4</a></li>
-												<li><a href="index-5.php">Home-5</a></li>
-												<li><a href="index-6.php">Home-6</a></li>
-												<li><a href="index-7.php">Home-7</a></li>
+												<li><a href="index.html">Home-1</a></li>
+												<li><a href="index-2.html">Home-2</a></li>
+												<li><a href="index-3.html">Home-3</a></li>
+												<li><a href="index-4.html">Home-4</a></li>
+												<li><a href="index-5.html">Home-5</a></li>
+												<li><a href="index-6.html">Home-6</a></li>
+												<li><a href="index-7.html">Home-7</a></li>
 											</ul>
 										</div>
 									</li>
-									<li><a href="product-details.php">Book<i class="fa fa-angle-down"></i></a>
+									<li><a href="product-details.html">Book<i class="fa fa-angle-down"></i></a>
 										<div class="mega-menu">
 											<span>
 												<a href="#" class="title">Jackets</a>
-												<a href="shop.php">Tops & Tees</a>
-												<a href="shop.php">Polo Short Sleeve</a>
-												<a href="shop.php">Graphic T-Shirts</a>
-												<a href="shop.php">Jackets & Coats</a>
-												<a href="shop.php">Fashion Jackets</a>
+												<a href="shop.html">Tops & Tees</a>
+												<a href="shop.html">Polo Short Sleeve</a>
+												<a href="shop.html">Graphic T-Shirts</a>
+												<a href="shop.html">Jackets & Coats</a>
+												<a href="shop.html">Fashion Jackets</a>
 											</span>
 											<span>
 												<a href="#" class="title">weaters</a>
-												<a href="shop.php">Crochet</a>
-												<a href="shop.php">Sleeveless</a>
-												<a href="shop.php">Stripes</a>
-												<a href="shop.php">Sweaters</a>
-												<a href="shop.php">hoodies</a>
+												<a href="shop.html">Crochet</a>
+												<a href="shop.html">Sleeveless</a>
+												<a href="shop.html">Stripes</a>
+												<a href="shop.html">Sweaters</a>
+												<a href="shop.html">hoodies</a>
 											</span>
 											<span>
 												<a href="#" class="title">Bottoms</a>
-												<a href="shop.php">Heeled sandals</a>
-												<a href="shop.php">Polo Short Sleeve</a>
-												<a href="shop.php">Flat sandals</a>
-												<a href="shop.php">Short Sleeve</a>
-												<a href="shop.php">Long Sleeve</a>
+												<a href="shop.html">Heeled sandals</a>
+												<a href="shop.html">Polo Short Sleeve</a>
+												<a href="shop.html">Flat sandals</a>
+												<a href="shop.html">Short Sleeve</a>
+												<a href="shop.html">Long Sleeve</a>
 											</span>
 											<span>
 												<a href="#" class="title">Jeans Pants</a>
-												<a href="shop.php">Polo Short Sleeve</a>
-												<a href="shop.php">Sleeveless</a>
-												<a href="shop.php">Graphic T-Shirts</a>
-												<a href="shop.php">Hoodies</a>
-												<a href="shop.php">Jackets</a>
+												<a href="shop.html">Polo Short Sleeve</a>
+												<a href="shop.html">Sleeveless</a>
+												<a href="shop.html">Graphic T-Shirts</a>
+												<a href="shop.html">Hoodies</a>
+												<a href="shop.html">Jackets</a>
 											</span>
 										</div>
 									</li>
-									<li><a href="product-details.php">Audio books<i class="fa fa-angle-down"></i></a>
+									<li><a href="product-details.html">Audio books<i class="fa fa-angle-down"></i></a>
 										<div class="mega-menu">
 											<span>
 												<a href="#" class="title">Shirts</a>
-												<a href="shop.php">Tops & Tees</a>
-												<a href="shop.php">Sweaters </a>
-												<a href="shop.php">Hoodies</a>
-												<a href="shop.php">Jackets & Coats</a>
+												<a href="shop.html">Tops & Tees</a>
+												<a href="shop.html">Sweaters </a>
+												<a href="shop.html">Hoodies</a>
+												<a href="shop.html">Jackets & Coats</a>
 											</span>
 											<span>
 												<a href="#" class="title">Tops & Tees</a>
-												<a href="shop.php">Long Sleeve </a>
-												<a href="shop.php">Short Sleeve</a>
-												<a href="shop.php">Polo Short Sleeve</a>
-												<a href="shop.php">Sleeveless</a>
+												<a href="shop.html">Long Sleeve </a>
+												<a href="shop.html">Short Sleeve</a>
+												<a href="shop.html">Polo Short Sleeve</a>
+												<a href="shop.html">Sleeveless</a>
 											</span>
 											<span>
 												<a href="#" class="title">Jackets</a>
-												<a href="shop.php">Sweaters</a>
-												<a href="shop.php">Hoodies</a>
-												<a href="shop.php">Wedges</a>
-												<a href="shop.php">Vests</a>
+												<a href="shop.html">Sweaters</a>
+												<a href="shop.html">Hoodies</a>
+												<a href="shop.html">Wedges</a>
+												<a href="shop.html">Vests</a>
 											</span>
 											<span>
 												<a href="#" class="title">Jeans Pants</a>
-												<a href="shop.php">Polo Short Sleeve</a>
-												<a href="shop.php">Sleeveless</a>
-												<a href="shop.php">Graphic T-Shirts</a>
-												<a href="shop.php">Hoodies</a>
+												<a href="shop.html">Polo Short Sleeve</a>
+												<a href="shop.html">Sleeveless</a>
+												<a href="shop.html">Graphic T-Shirts</a>
+												<a href="shop.html">Hoodies</a>
 											</span>
 										</div>
 									</li>
-									<li><a href="product-details.php">children’s books<i class="fa fa-angle-down"></i></a>
+									<li><a href="product-details.html">children’s books<i class="fa fa-angle-down"></i></a>
 										<div class="mega-menu mega-menu-2">
 											<span>
 												<a href="#" class="title">Tops</a>
-												<a href="shop.php">Shirts</a>
-												<a href="shop.php">Florals</a>
-												<a href="shop.php">Crochet</a>
-												<a href="shop.php">Stripes</a>
+												<a href="shop.html">Shirts</a>
+												<a href="shop.html">Florals</a>
+												<a href="shop.html">Crochet</a>
+												<a href="shop.html">Stripes</a>
 											</span>
 											<span>
 												<a href="#" class="title">Bottoms</a>
-												<a href="shop.php">Shorts</a>
-												<a href="shop.php">Dresses</a>
-												<a href="shop.php">Trousers</a>
-												<a href="shop.php">Jeans</a>
+												<a href="shop.html">Shorts</a>
+												<a href="shop.html">Dresses</a>
+												<a href="shop.html">Trousers</a>
+												<a href="shop.html">Jeans</a>
 											</span>
 											<span>
 												<a href="#" class="title">Shoes</a>
-												<a href="shop.php">Heeled sandals</a>
-												<a href="shop.php">Flat sandals</a>
-												<a href="shop.php">Wedges</a>
-												<a href="shop.php">Ankle boots</a>
+												<a href="shop.html">Heeled sandals</a>
+												<a href="shop.html">Flat sandals</a>
+												<a href="shop.html">Wedges</a>
+												<a href="shop.html">Ankle boots</a>
 											</span>
 										</div>
 									</li>
 									<li><a href="#">blog<i class="fa fa-angle-down"></i></a>
 										<div class="sub-menu sub-menu-2">
 											<ul>
-												<li><a href="blog.php">blog</a></li>
-												<li><a href="blog-details.php">blog-details</a></li>
+												<li><a href="blog.html">blog</a></li>
+												<li><a href="blog-details.html">blog-details</a></li>
 											</ul>
 										</div>
 									</li>
 									<li><a href="#">pages<i class="fa fa-angle-down"></i></a>
 										<div class="sub-menu sub-menu-2">
 											<ul>
-												<li><a href="shop.php">shop</a></li>
-												<li><a href="shop-list.php">shop list view</a></li>
-												<li><a href="product-details.php">product-details</a></li>
-												<li><a href="product-details-affiliate.php">product-affiliate</a></li>
-												<li><a href="blog.php">blog</a></li>
-												<li><a href="blog-details.php">blog-details</a></li>
-												<li><a href="contact.php">contact</a></li>
-												<li><a href="about.php">about</a></li>
-												<li><a href="login.php">login</a></li>
-												<li><a href="register.php">register</a></li>
-												<li><a href="my-account.php">my-account</a></li>
-												<li><a href="cart.php">cart</a></li>
-												<li><a href="compare.php">compare</a></li>
-												<li><a href="checkout.php">checkout</a></li>
-												<li><a href="wishlist.php">wishlist</a></li>
-												<li><a href="404.php">404 Page</a></li>
+												<li><a href="shop.html">shop</a></li>
+												<li><a href="shop-list.html">shop list view</a></li>
+												<li><a href="product-details.html">product-details</a></li>
+												<li><a href="product-details-affiliate.html">product-affiliate</a></li>
+												<li><a href="blog.html">blog</a></li>
+												<li><a href="blog-details.html">blog-details</a></li>
+												<li><a href="contact.html">contact</a></li>
+												<li><a href="about.html">about</a></li>
+												<li><a href="login.html">login</a></li>
+												<li><a href="register.html">register</a></li>
+												<li><a href="my-account.html">my-account</a></li>
+												<li><a href="cart.html">cart</a></li>
+												<li><a href="compare.html">compare</a></li>
+												<li><a href="checkout.html">checkout</a></li>
+												<li><a href="wishlist.html">wishlist</a></li>
+												<li><a href="404.html">404 Page</a></li>
 											</ul>
 										</div>
 									</li>
@@ -340,7 +356,7 @@
 							</nav>
 						</div>
 						<div class="safe-area">
-							<a href="product-details.php">sales off</a>
+							<a href="product-details.html">sales off</a>
 						</div>
 					</div>
 				</div>
@@ -398,101 +414,101 @@
 						<div class="mobile-menu">
 							<nav id="mobile-menu-active">
 								<ul id="nav">
-									<li><a href="index.php">Home</a>
+									<li><a href="index.html">Home</a>
 										<ul>
-											<li><a href="index.php">Home-1</a></li>
-											<li><a href="index-2.php">Home-2</a></li>
-											<li><a href="index-3.php">Home-3</a></li>
-											<li><a href="index-4.php">Home-4</a></li>
-											<li><a href="index-5.php">Home-5</a></li>
-											<li><a href="index-6.php">Home-6</a></li>
-											<li><a href="index-7.php">Home-7</a></li>
+											<li><a href="index.html">Home-1</a></li>
+											<li><a href="index-2.html">Home-2</a></li>
+											<li><a href="index-3.html">Home-3</a></li>
+											<li><a href="index-4.html">Home-4</a></li>
+											<li><a href="index-5.html">Home-5</a></li>
+											<li><a href="index-6.html">Home-6</a></li>
+											<li><a href="index-7.html">Home-7</a></li>
 										</ul>
 									</li>
-									<li><a href="product-details.php">Book</a>
+									<li><a href="product-details.html">Book</a>
 										<ul>
-											<li><a href="shop.php">Tops & Tees</a></li>
-											<li><a href="shop.php">Polo Short Sleeve</a></li>
-											<li><a href="shop.php">Graphic T-Shirts</a></li>
-											<li><a href="shop.php">Jackets & Coats</a></li>
-											<li><a href="shop.php">Fashion Jackets</a></li>
-											<li><a href="shop.php">Crochet</a></li>
-											<li><a href="shop.php">Sleeveless</a></li>
-											<li><a href="shop.php">Stripes</a></li>
-											<li><a href="shop.php">Sweaters</a></li>
-											<li><a href="shop.php">hoodies</a></li>
-											<li><a href="shop.php">Heeled sandals</a></li>
-											<li><a href="shop.php">Polo Short Sleeve</a></li>
-											<li><a href="shop.php">Flat sandals</a></li>
-											<li><a href="shop.php">Short Sleeve</a></li>
-											<li><a href="shop.php">Long Sleeve</a></li>
-											<li><a href="shop.php">Polo Short Sleeve</a></li>
-											<li><a href="shop.php">Sleeveless</a></li>
-											<li><a href="shop.php">Graphic T-Shirts</a></li>
-											<li><a href="shop.php">Hoodies</a></li>
-											<li><a href="shop.php">Jackets</a></li>
+											<li><a href="shop.html">Tops & Tees</a></li>
+											<li><a href="shop.html">Polo Short Sleeve</a></li>
+											<li><a href="shop.html">Graphic T-Shirts</a></li>
+											<li><a href="shop.html">Jackets & Coats</a></li>
+											<li><a href="shop.html">Fashion Jackets</a></li>
+											<li><a href="shop.html">Crochet</a></li>
+											<li><a href="shop.html">Sleeveless</a></li>
+											<li><a href="shop.html">Stripes</a></li>
+											<li><a href="shop.html">Sweaters</a></li>
+											<li><a href="shop.html">hoodies</a></li>
+											<li><a href="shop.html">Heeled sandals</a></li>
+											<li><a href="shop.html">Polo Short Sleeve</a></li>
+											<li><a href="shop.html">Flat sandals</a></li>
+											<li><a href="shop.html">Short Sleeve</a></li>
+											<li><a href="shop.html">Long Sleeve</a></li>
+											<li><a href="shop.html">Polo Short Sleeve</a></li>
+											<li><a href="shop.html">Sleeveless</a></li>
+											<li><a href="shop.html">Graphic T-Shirts</a></li>
+											<li><a href="shop.html">Hoodies</a></li>
+											<li><a href="shop.html">Jackets</a></li>
 										</ul>
 									</li>
-									<li><a href="product-details.php">Audio books</a>
+									<li><a href="product-details.html">Audio books</a>
 										<ul>
-											<li><a href="shop.php">Tops & Tees</a></li>
-											<li><a href="shop.php">Sweaters</a></li>
-											<li><a href="shop.php">Hoodies</a></li>
-											<li><a href="shop.php">Jackets & Coats</a></li>
-											<li><a href="shop.php">Long Sleeve</a></li>
-											<li><a href="shop.php">Short Sleeve</a></li>
-											<li><a href="shop.php">Polo Short Sleeve</a></li>
-											<li><a href="shop.php">Sleeveless</a></li>
-											<li><a href="shop.php">Sweaters</a></li>
-											<li><a href="shop.php">Hoodies</a></li>
-											<li><a href="shop.php">Wedges</a></li>
-											<li><a href="shop.php">Vests</a></li>
-											<li><a href="shop.php">Polo Short Sleeve</a></li>
-											<li><a href="shop.php">Sleeveless</a></li>
-											<li><a href="shop.php">Graphic T-Shirts</a></li>
-											<li><a href="shop.php">Hoodies</a></li>
+											<li><a href="shop.html">Tops & Tees</a></li>
+											<li><a href="shop.html">Sweaters</a></li>
+											<li><a href="shop.html">Hoodies</a></li>
+											<li><a href="shop.html">Jackets & Coats</a></li>
+											<li><a href="shop.html">Long Sleeve</a></li>
+											<li><a href="shop.html">Short Sleeve</a></li>
+											<li><a href="shop.html">Polo Short Sleeve</a></li>
+											<li><a href="shop.html">Sleeveless</a></li>
+											<li><a href="shop.html">Sweaters</a></li>
+											<li><a href="shop.html">Hoodies</a></li>
+											<li><a href="shop.html">Wedges</a></li>
+											<li><a href="shop.html">Vests</a></li>
+											<li><a href="shop.html">Polo Short Sleeve</a></li>
+											<li><a href="shop.html">Sleeveless</a></li>
+											<li><a href="shop.html">Graphic T-Shirts</a></li>
+											<li><a href="shop.html">Hoodies</a></li>
 										</ul>
 									</li>
-									<li><a href="product-details.php">children’s books</a>
+									<li><a href="product-details.html">children’s books</a>
 										<ul>
-											<li><a href="shop.php">Shirts</a></li>
-											<li><a href="shop.php">Florals</a></li>
-											<li><a href="shop.php">Crochet</a></li>
-											<li><a href="shop.php">Stripes</a></li>
-											<li><a href="shop.php">Shorts</a></li>
-											<li><a href="shop.php">Dresses</a></li>
-											<li><a href="shop.php">Trousers</a></li>
-											<li><a href="shop.php">Jeans</a></li>
-											<li><a href="shop.php">Heeled sandals</a></li>
-											<li><a href="shop.php">Flat sandals</a></li>
-											<li><a href="shop.php">Wedges</a></li>
-											<li><a href="shop.php">Ankle boots</a></li>
+											<li><a href="shop.html">Shirts</a></li>
+											<li><a href="shop.html">Florals</a></li>
+											<li><a href="shop.html">Crochet</a></li>
+											<li><a href="shop.html">Stripes</a></li>
+											<li><a href="shop.html">Shorts</a></li>
+											<li><a href="shop.html">Dresses</a></li>
+											<li><a href="shop.html">Trousers</a></li>
+											<li><a href="shop.html">Jeans</a></li>
+											<li><a href="shop.html">Heeled sandals</a></li>
+											<li><a href="shop.html">Flat sandals</a></li>
+											<li><a href="shop.html">Wedges</a></li>
+											<li><a href="shop.html">Ankle boots</a></li>
 										</ul>
 									</li>
 									<li><a href="#">blog</a>
 										<ul>
-											<li><a href="blog.php">Blog</a></li>
-											<li><a href="blog-details.php">blog-details</a></li>
+											<li><a href="blog.html">Blog</a></li>
+											<li><a href="blog-details.html">blog-details</a></li>
 										</ul>
 									</li>
-									<li><a href="product-details.php">Page</a>
+									<li><a href="product-details.html">Page</a>
 										<ul>
-											<li><a href="shop.php">shop</a></li>
-											<li><a href="shop-list.php">shop list view</a></li>
-											<li><a href="product-details.php">product-details</a></li>
-											<li><a href="product-details-affiliate.php">product-affiliate</a></li>
-											<li><a href="blog.php">blog</a></li>
-											<li><a href="blog-details.php">blog-details</a></li>
-											<li><a href="contact.php">contact</a></li>
-											<li><a href="about.php">about</a></li>
-											<li><a href="login.php">login</a></li>
-											<li><a href="register.php">register</a></li>
-											<li><a href="my-account.php">my-account</a></li>
-											<li><a href="cart.php">cart</a></li>
-											<li><a href="compare.php">compare</a></li>
-											<li><a href="checkout.php">checkout</a></li>
-											<li><a href="wishlist.php">wishlist</a></li>
-											<li><a href="404.php">404 Page</a></li>
+											<li><a href="shop.html">shop</a></li>
+											<li><a href="shop-list.html">shop list view</a></li>
+											<li><a href="product-details.html">product-details</a></li>
+											<li><a href="product-details-affiliate.html">product-affiliate</a></li>
+											<li><a href="blog.html">blog</a></li>
+											<li><a href="blog-details.html">blog-details</a></li>
+											<li><a href="contact.html">contact</a></li>
+											<li><a href="about.html">about</a></li>
+											<li><a href="login.html">login</a></li>
+											<li><a href="register.html">register</a></li>
+											<li><a href="my-account.html">my-account</a></li>
+											<li><a href="cart.html">cart</a></li>
+											<li><a href="compare.html">compare</a></li>
+											<li><a href="checkout.html">checkout</a></li>
+											<li><a href="wishlist.html">wishlist</a></li>
+											<li><a href="404.html">404 Page</a></li>
 										</ul>
 									</li>
 								</ul>
@@ -531,213 +547,32 @@
 							<h2>Shopping Options</h2>
 						</div>
 						<div class="left-title mb-20">
-							<h4>Category</h4>
+              <h4>Category</h4>
 						</div>
+            <?php
+
+            $categorie=new categorieC();
+            $listeCategorie=$categorie->affichercategories();
+
+            foreach($listeCategorie as $row) {
+
+
+?>
 						<div class="left-menu mb-30">
 							<ul>
-								<li><a href="#">Jackets<span>(15)</span></a></li>
-								<li><a href="#">weaters<span>(9)</span></a></li>
-								<li><a href="#">Bottoms<span>(12)</span></a></li>
-								<li><a href="#">Jeans Pants<span>(6)</span></a></li>
+								<li><a href="shopcat.php?id_cat=<?PHP echo $row['nom_categorie'];?>"><?PHP echo $row['nom_categorie'];?><span>(15)</span></a></li>
+
+
+
 							</ul>
 						</div>
-						<div class="left-title mb-20">
-							<h4>Color</h4>
-						</div>
-						<div class="color-menu mb-30">
-							<ul class="color">
-								<li><a href="#"></a></li>
-								<li><a href="#" class="bg-2"></a></li>
-								<li><a href="#" class="bg-3"></a></li>
-								<li><a href="#" class="bg-4"></a></li>
-							</ul>
-						</div>
-						<div class="left-title mb-20">
-							<h4>Manufacturer</h4>
-						</div>
-						<div class="left-menu mb-30">
-							<ul>
-								<li><a href="#">Adidas<span>(4)</span></a></li>
-								<li><a href="#">Chanel<span>(7)</span></a></li>
-								<li><a href="#">DKNY <span>(3)</span></a></li>
-								<li><a href="#">Dolce<span>(3)</span></a></li>
-								<li><a href="#">Gabbana<span>(2)</span></a></li>
-								<li><a href="#">Nike<span>(3)</span></a></li>
-								<li><a href="#">Other <span>(1)</span></a></li>
-							</ul>
-						</div>
-						<div class="left-title mb-20">
-							<h4>Price</h4>
-						</div>
-						<div class="left-menu mb-30">
-							<ul>
-								<li><a href="#">$0.00-$9.99<span>(1)</span></a></li>
-								<li><a href="#">$30.00-$39.99<span>(11)</span></a></li>
-								<li><a href="#">$40.00-$49.99<span>(2)</span></a></li>
-								<li><a href="#">$50.00-$59.99<span>(3)</span></a></li>
-								<li><a href="#">$70.00-and above<span>(1)</span></a></li>
-							</ul>
-						</div>
-						<div class="left-title mb-20">
-							<h4>Random</h4>
-						</div>
-						<div class="random-area mb-30">
-							<div class="product-active-2 owl-carousel">
-								<div class="product-total-2">
-									<div class="single-most-product bd mb-18">
-										<div class="most-product-img">
-											<a href="#"><img src="img/product/20.jpg" alt="book" /></a>
-										</div>
-										<div class="most-product-content">
-											<div class="product-rating">
-												<ul>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-												</ul>
-											</div>
-											<h4><a href="#">Endeavor Daytrip</a></h4>
-											<div class="product-price">
-												<ul>
-													<li>$30.00</li>
-													<li class="old-price">$33.00</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="single-most-product bd mb-18">
-										<div class="most-product-img">
-											<a href="#"><img src="img/product/21.jpg" alt="book" /></a>
-										</div>
-										<div class="most-product-content">
-											<div class="product-rating">
-												<ul>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-												</ul>
-											</div>
-											<h4><a href="#">Savvy Shoulder Tote</a></h4>
-											<div class="product-price">
-												<ul>
-													<li>$30.00</li>
-													<li class="old-price">$35.00</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="single-most-product">
-										<div class="most-product-img">
-											<a href="#"><img src="img/product/22.jpg" alt="book" /></a>
-										</div>
-										<div class="most-product-content">
-											<div class="product-rating">
-												<ul>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-												</ul>
-											</div>
-											<h4><a href="#">Compete Track Tote</a></h4>
-											<div class="product-price">
-												<ul>
-													<li>$35.00</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product-total-2">
-									<div class="single-most-product bd mb-18">
-										<div class="most-product-img">
-											<a href="#"><img src="img/product/23.jpg" alt="book" /></a>
-										</div>
-										<div class="most-product-content">
-											<div class="product-rating">
-												<ul>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-												</ul>
-											</div>
-											<h4><a href="#">Voyage Yoga Bag</a></h4>
-											<div class="product-price">
-												<ul>
-													<li>$30.00</li>
-													<li class="old-price">$33.00</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="single-most-product bd mb-18">
-										<div class="most-product-img">
-											<a href="#"><img src="img/product/24.jpg" alt="book" /></a>
-										</div>
-										<div class="most-product-content">
-											<div class="product-rating">
-												<ul>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-												</ul>
-											</div>
-											<h4><a href="#">Impulse Duffle</a></h4>
-											<div class="product-price">
-												<ul>
-													<li>$70.00</li>
-													<li class="old-price">$74.00</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="single-most-product">
-										<div class="most-product-img">
-											<a href="#"><img src="img/product/22.jpg" alt="book" /></a>
-										</div>
-										<div class="most-product-content">
-											<div class="product-rating">
-												<ul>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-													<li><a href="#"><i class="fa fa-star"></i></a></li>
-												</ul>
-											</div>
-											<h4><a href="#">Fusion Backpack</a></h4>
-											<div class="product-price">
-												<ul>
-													<li>$59.00</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="banner-area mb-30">
-							<div class="banner-img-2">
-								<a href="#"><img src="img/banner/31.jpg" alt="banner" /></a>
-							</div>
-						</div>
-						<div class="left-title-2 mb-30">
-							<h2>Compare Products</h2>
-							<p>You have no items to compare.</p>
-						</div>
-						<div class="left-title-2">
-							<h2>My Wish List</h2>
-							<p>You have no items in your wish list.</p>
-						</div>
+      <?PHP    }?>
+
+
+
+
+
+
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-12 col-12 order-lg-2 order-1">
@@ -785,11 +620,11 @@
 
                                 <select id="sorter" class="sorter-options" data-role="sorter">
                                         <?php
-                                        include "../Core/categorieC.php";
+                                    //    include "../../core/categorieC.php";
                                         $categorie=new categorieC();
                                         $listeCategorie=$categorie->affichercategories();
                                         foreach($listeCategorie as $row) {
-                                            ?>
+                                            ?><p> aloo </p>
                                     <option selected="selected" value="<?PHP echo $row['id_categorie']; ?>"> <?PHP echo $row['nom_categorie']; ?> </option>
                                         <?php
                                     }
@@ -836,7 +671,7 @@
 									<div class="product-wrapper mb-40">
 										<div class="product-img">
 											<a href="#">
-												<img src="<?PHP echo '../../uploads/'.$row['image']; ?>" alt="book" class="primary" />
+												<img src="<?PHP echo '../uploads/'.$row['image']; ?>" alt="book" class="primary" />
 											</a>
 											<div class="quick-view">
 												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
@@ -878,7 +713,7 @@
 											</div>
 											<div class="add-to-link">
 												<ul>
-													<li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
 												</ul>
 											</div>
 										</div>
@@ -929,7 +764,7 @@
 												</div>
 												<div class="add-to-link">
 													<ul>
-														<li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
+														<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -977,7 +812,7 @@
 												</div>
 												<div class="add-to-link">
 													<ul>
-														<li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
+														<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1024,7 +859,7 @@
 												</div>
 												<div class="add-to-link">
 													<ul>
-														<li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
+														<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1071,7 +906,7 @@
 												</div>
 												<div class="add-to-link">
 													<ul>
-														<li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
+														<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1118,7 +953,7 @@
 												</div>
 												<div class="add-to-link">
 													<ul>
-														<li><a href="product-details.php" title="Details"><i class="fa fa-external-link"></i></a></li>
+														<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -1187,7 +1022,7 @@
 									</div>
 									<div class="footer-mid-menu">
 										<ul>
-											<li><a href="about.php">About us</a></li>
+											<li><a href="about.html">About us</a></li>
 											<li><a href="#">Prices drop </a></li>
 											<li><a href="#">New products</a></li>
 											<li><a href="#">Best sales</a></li>
@@ -1202,10 +1037,10 @@
 									</div>
 									<div class="footer-mid-menu">
 										<ul>
-											<li><a href="contact.php">Contact us</a></li>
+											<li><a href="contact.html">Contact us</a></li>
 											<li><a href="#">Sitemap</a></li>
 											<li><a href="#">Stores</a></li>
-											<li><a href="register.php">My account </a></li>
+											<li><a href="register.html">My account </a></li>
 										</ul>
 									</div>
 								</div>
@@ -1217,7 +1052,7 @@
 									</div>
 									<div class="footer-mid-menu">
 										<ul>
-											<li><a href="contact.php">Addresses</a></li>
+											<li><a href="contact.html">Addresses</a></li>
 											<li><a href="#">Credit slips </a></li>
 											<li><a href="#"> Orders</a></li>
 											<li><a href="#">Personal info</a></li>
@@ -1377,5 +1212,5 @@
 </body>
 
 
-<!-- Mirrored from shop.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Nov 2019 17:48:08 GMT -->
+<!-- Mirrored from shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Nov 2019 17:48:08 GMT -->
 </html>

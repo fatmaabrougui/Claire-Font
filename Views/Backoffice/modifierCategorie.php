@@ -103,6 +103,9 @@ include "../../entities/categorie.php";
                                     <li>
                                         <a href="afficherproduit.php">Liste des Produits</a>
                                     </li>
+                                    <li>
+                                            <a href="statistique.php">Statistique des Produits</a>
+                                        </li>
                                   </ul>
                         </li>
                         <li>
@@ -360,8 +363,8 @@ include "../../entities/categorie.php";
             $categorieC=new categorieC();
             $result=$categorieC->recuperercategorie($_GET['id_categorie']);
             $categorie=$result[0];
-            
-            
+
+
             ?>
             <div class="main-panel">
                 <div class="content-wrapper">
@@ -372,29 +375,29 @@ include "../../entities/categorie.php";
                                     <div class="col-10 ml-lg-4 ">
                                         <form class="forms-sample" action="ModCat.php" method="post">
                                             <div class="form-group">
-            
+
                                                 <label for="exampleInputName1">ID categorie</label>
                                                 <input type="text" required name="id_categorie" value="<?PHP echo $categorie['id_categorie'];?>"  class="form-control" id="id_categorie" placeholder="Name">
-            
+
                                             </div>
-            
+
                                             <div class="form-group">
                                                 <label for="exampleTextarea1">Nom_categorie</label>
                                                 <textarea required class="form-control" name="nom_categorie" id="nom_categorie" rows="4"><?PHP echo $categorie['nom_categorie'];?></textarea>
                                             </div>
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
                                                                                          <input class="btn btn-light" type="submit" name="submit" value="Modifier">
                                                                                         <button class="btn btn-light">Cancel</button>
                                                                                         <form>
                                                                                         </div>
                                                                                         <p>  hne </p>
-            
+
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -402,9 +405,9 @@ include "../../entities/categorie.php";
                                                                     </div>
                                             </div>
                                                                 <!-- page-body-wrapper ends -->
-            
+
                                                             <?php } ?>
-            
+
 
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>

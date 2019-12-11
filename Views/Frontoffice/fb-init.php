@@ -9,13 +9,13 @@ require './vendor/autoload.php';
 
 $fb = new Facebook\Facebook([
     'app_id' => '447550982602595', // replace your app_id
-    'app_secret' => '39eed5e4232e137ca663d2a02a15703d',   // replace your app_scsret
+    'app_secret' => '06d397694078479d62903d840cd38b8c',   // replace your app_scsret
     'default_graph_version' => 'v2.7'
         ]);
 
 
 $helper = $fb->getRedirectLoginHelper();
-$login_url = $helper->getLoginUrl("http://localhost/Projet_web/views/frontoffice/");
+$login_url = $helper->getLoginUrl("http://localhost/Projet_web/views/Frontoffice/");
 
 try {
 

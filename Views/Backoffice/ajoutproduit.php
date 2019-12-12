@@ -101,6 +101,9 @@ if (!empty($_FILES['img'])) {
                                     <li>
                                         <a href="afficherproduit.php">Liste des Produits</a>
                                     </li>
+                                    <li>
+                                            <a href="statistique.php">Statistique des Produits</a>
+                                        </li>
                                   </ul>
                         </li>
                         <li>

@@ -84,6 +84,9 @@
                                     <li>
                                         <a href="afficherproduit.php">Liste des Produits</a>
                                     </li>
+                                    <li>
+                                            <a href="statistique.php">Statistique des Produits</a>
+                                        </li>
                                   </ul>
                         </li>
                         <li>
@@ -338,7 +341,7 @@
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="row">
-                          
+
                             <div class="main-panel">
                                 <div class="content-wrapper">
                                     <div class="row">
@@ -347,18 +350,18 @@
                                                 <div class="row">
                                                     <div class="col-10 ml-lg-4 ">
                                                         <form class="forms-sample" action="AjoutCat.php" method="post">
-                    
+
                                                             <div class="form-group">
                                                                 <label for="exampleTextarea1">nom categorie</label>
                                                                 <textarea required class="form-control" id="nom_categorie" name="nom_categorie" rows="4"></textarea>
                                                             </div>
-                    
-                    
+
+
                                                             <input class="btn btn-light" type="submit" name="submit" value="Ajouter">
                                                            <button class="btn btn-light">Cancel</button>
                                                         </form>
                                                            </div>
-                    
+
                                                        </div>
                                                    </div>
                                                </div>

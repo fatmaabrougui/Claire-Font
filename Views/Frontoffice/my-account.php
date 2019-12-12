@@ -2,7 +2,6 @@
 <?php if (!(isset($_SESSION['access_token']))AND(!(isset($_SESSION['access_token'])))){
 	         header("Location: login.php");
 }?>
-
 <!doctype html>
 <html class="no-js" lang="en">
     
@@ -475,7 +474,7 @@
                                                 address</a>
                                             <a href="#account-info" data-toggle="tab"><i class="fa fa-user"></i> Account
                                                 Details</a>
-                                            <a href="login.php"><i class="fa fa-sign-out"></i> Logout</a>
+                                            <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
                                         </div>
                                     </div>
                                     <!-- My Account Tab Menu End -->
@@ -611,56 +610,46 @@
                                             <!-- Single Tab Content Start -->
                                             <div class="tab-pane fade" id="account-info" role="tabpanel">
                                                 <div class="myaccount-content">
-                                                    <h5>Informations personelles</h5>
-<?PHP
-include "../../Entites/client.php";
-include "../../Core/clientC.php";
-if (isset($_GET['id_client'])){
-	$clientC=new clientC();
-    $result=$clientC->recupererclient($_GET['id_client']);
-	foreach($result as $row){
-		$id_client=$row['id_client'];
-		$nom_client=$row['nom_client'];
-        $prenom_client=$row['prenom_client'];
-        $email_client=$row['email_client'];
-        $pwd_client=$row['pwd_client'];
-        $tel_client=$row['tel_client'];
-		$categorie_client=$row['categorie_client'];
-?>
+                                                    <h5>Account Details</h5>
                                                     <div class="account-details-form">
-                                                        <form method="POST">
+                                                        <form action="#">
                                                             <div class="row">
                                                                 <div class="col-lg-6">
-                                                                    <label >Nom</label>
-                        											<input type="text"  name="nom_client" value="<?PHP echo $nom_client ?>"/>
-                    											</div>
-                                                            </div>
+                                                                    <div class="single-input-item">
+                                                                        <label for="first-name" class="required">First
+                                                                            Name</label>
+                                                                        <input type="text" id="first-name" placeholder="First Name" />
+                                                                    </div>
+                                                                </div>
                                                                 <div class="col-lg-6">
                                                                     <div class="single-input-item">
-												                        <label >Prenom</label>
-												                        <input type="text"  name="prenom_client" value="<?PHP echo $prenom_client ?>"/>
+                                                                        <label for="last-name" class="required">Last
+                                                                            Name</label>
+                                                                        <input type="text" id="last-name" placeholder="Last Name" />
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="single-input-item">
-										                        <label >Adresse Mail</label>
-										                        <input type="email"  name="email_client" value="<?PHP echo $email_client ?>"/>
+                                                                <label for="display-name" class="required">Display Name</label>
+                                                                <input type="text" id="display-name" placeholder="Display Name" />
                                                             </div>
                                                             <div class="single-input-item">
-										                        <label >Numéro de téléphone</label>
-										                        <input type="number"  name="tel_client" value="<?PHP echo $tel_client ?>"/>
+                                                                <label for="email" class="required">Email Addres</label>
+                                                                <input type="email" id="email" placeholder="Email Address" />
                                                             </div>
                                                             <fieldset>
-                                                                <legend>Changement de mot de passe</legend>
+                                                                <legend>Password change</legend>
                                                                 <div class="single-input-item">
-											                        <label>Saisir le nouveau mot de passe</label>
-											                        <input type="number" name="pwd_client" value="<?PHP echo $pwd_client ?>"/>
-											                    </div>
+                                                                    <label for="current-pwd" class="required">Current
+                                                                        Password</label>
+                                                                    <input type="password" id="current-pwd" placeholder="Current Password" />
+                                                                </div>
                                                                 <div class="row">
                                                                     <div class="col-lg-6">
                                                                         <div class="single-input-item">
-																			<label class="control-label" for="warning">Resaisir le nouveau mot de passe</label>
-                      													  	<input type="number" class="form-control" id="warning" name="pwd_client2" value="<?PHP echo $pwd_client ?>"/>
+                                                                            <label for="new-pwd" class="required">New
+                                                                                Password</label>
+                                                                            <input type="password" id="new-pwd" placeholder="New Password" />
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-lg-6">

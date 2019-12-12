@@ -1,5 +1,6 @@
 
 <?PHP
+
 include "../../core/categorieC.php";
 $categorie=new categorieC();
 $listeCategorie=$categorie->affichercategories();

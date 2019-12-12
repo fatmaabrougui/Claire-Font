@@ -1,4 +1,7 @@
 <?php require './fb-init.php'; ?>
+<?php if (!(isset($_SESSION['access_token']))AND(!(isset($_SESSION['access_token'])))){
+	         header("Location: login.php");
+}?>
 <!doctype html>
 <html class="no-js" lang="en">
     
@@ -484,8 +487,8 @@
                                                 <div class="myaccount-content">
                                                     <h5>Dashboard</h5>
                                                     <div class="welcome">
-                                                        <p>Hello, <strong>Erik Jhonson</strong> (If Not <strong>Jhonson
-                                                            !</strong><a href="login-register.php" class="logout"> Logout</a>)</p>
+                                                        <p>Hello, <strong><?php echo $user->getField('name');?></strong> (If Not <strong><?php echo $user->getField('name');?>
+                                                            !</strong><a href="logout.php" class="logout"> Logout</a>)</p>
                                                     </div>
                                                     <p class="mb-0">From your account dashboard. you can easily check &
                                                         view your recent orders, manage your shipping and billing addresses

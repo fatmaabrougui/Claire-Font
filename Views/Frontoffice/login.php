@@ -477,16 +477,15 @@ if(isset($_POST['formconnexion'])) {
 							<div class="single-login single-login-2">
             <input type="submit" name="formconnexion" value="Se connecter !" />
 								<input id="rememberme" type="checkbox" name="rememberme" value="forever">
-								<span>Remember me</span>
+								<span>Se souvenir de moi</span>
 							</div>
 							         <?php
          if(isset($erreur)) {
             echo '<font color="red">'.$erreur."</font>";
          }
          ?>
-							<a href="<?php echo $login_url; ?>"><img src="img/logo/facebook.png" width="200px"></a><br>
-							<a href="#">Lost your password?</a>
-
+							<a href="<?php echo $login_url; ?>"><img src="img/logo/facebook.png" width="200px"></a><br><br/>
+							<a href="recuperation.php">Mot de passe oublié?</a>
 						</form>
 					</div>
 				</div>

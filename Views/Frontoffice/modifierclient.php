@@ -12,11 +12,9 @@
 </head>
 <body>
 <?PHP
-include "../entites/client.php";
-include "../core/clientC.php";
-echo "ok";
+include "../../Entites/client.php";
+include "../../Core/clientC.php";
 if (isset($_GET['id_client'])){
-    echo "ok2";
 	$clientC=new clientC();
     $result=$clientC->recupererclient($_GET['id_client']);
 	foreach($result as $row){

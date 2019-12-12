@@ -1,4 +1,60 @@
 <?php require './fb-init.php'; ?>
+<?php           class config {
+                private static $instance = NULL;
+
+                public static function getConnexion() {
+                  if (!isset(self::$instance)) {
+                    try{
+                    self::$instance = new PDO('mysql:host=localhost;dbname=clairefontaine', 'root', '');
+                    self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                    }catch(Exception $e){
+                        die('Erreur: '.$e->getMessage());
+                    }
+                  }
+                  return self::$instance;
+                }
+              }
+
+              class produitC {
+              function afficherproduits(){
+                //$sql="SElECT * From produit e inner join formationphp.produit a on e.id_p= a.id_p";
+                $sql="SElECT * From produit";
+                $db = config::getConnexion();
+                try{
+                $liste=$db->query($sql);
+                return $liste;
+                }
+                catch (Exception $e){
+                    die('Erreur: '.$e->getMessage());
+                }
+            }
+        }
+        class categorieC {
+
+
+
+
+        	function affichercategories(){
+        		//$sql="SElECT * From categorie e inner join formationphp.categorie a on e.id_cat= a.id_cat";
+        		$sql="SElECT * From categorie";
+        		$db = config::getConnexion();
+        		try{
+        		$liste=$db->query($sql);
+        		return $liste;
+        		}
+                catch (Exception $e){
+                    die('Erreur: '.$e->getMessage());
+                }
+        	}}
+
+
+
+            $produit=new produitC();
+            $listeProduits=$produit->afficherProduits();
+
+
+
+            ?>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -458,7 +514,7 @@
 							</div>
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="single-register">
-									<form method="POST" action="CLIENT/views/ajoutclient.php" onsubmit="">
+									<form method="POST" action="ajoutclient.php" onsubmit="">
 										<label>Prénom<span>*</span></label>
 										<input type="text" name="prenom_client" />
 									</form>
@@ -466,31 +522,43 @@
 							</div>
 						</div>
 							<div class="single-register">
-								<form method="POST" action="CLIENT/views/ajoutclient.php" onsubmit="">
+								<form method="POST" action="ajoutclient.php" onsubmit="">
 									<label>Adresse Mail<span>*</span></label>
 									<input type="mail" name="email_client" />
 								</form>
 							</div>
 							<div class="single-register">
-								<form method="POST" action="CLIENT/views/ajoutclient.php" onsubmit="">
+								<form method="POST" action="ajoutclient.php" onsubmit="">
 									<label>Numéro de téléphone<span>*</span></label>
 									<input type="number" name="tel_client" />
 								</form>
 							</div>
 						<div class="single-register">
-							<form method="POST" action="CLIENT/views/ajoutclient.php" onsubmit="">
-								<label>Catégorie Préférée<span>*</span></label>
-								<input type="text" placeholder="Street address" name="categorie_client" />
+							<form method="POST" action="ajoutclient.php" onsubmit="">
+									<label>Catégorie préféré<span>*</span></label>
+                                <select id="sorter" class="sorter-options" data-role="sorter">
+                                        <?php
+                                    //    include "../../core/categorieC.php";
+                                        $categorie=new categorieC();
+                                        $listeCategorie=$categorie->affichercategories();
+                                        foreach($listeCategorie as $row) {
+                                            ?><p> aloo </p>
+                                    <option selected="selected" value="<?PHP echo $row['id_categorie']; ?>"> <?PHP echo $row['nom_categorie']; ?> </option>
+                                        <?php
+                                    }
+                                    //$listeProduits=$produit->afficherProduits();
+                                    ?>
+                                    </select>
 							</form>
 						</div>
 						<div class="single-register">
-							<form method="POST" action="CLIENT/views/ajoutclient.php" onsubmit="">
+							<form method="POST" action="ajoutclient.php" onsubmit="">
 								<label>Mot de passe<span>*</span></label>
 								<input type="password" placeholder="Password" name="pwd_client" />
 							</form>
 						</div>
 						<div class="single-register">
-							<form method="POST" action="CLIENT/views/ajoutclient.php" onsubmit="">
+							<form method="POST" action="ajoutclient.php" onsubmit="">
 								<label>Resaisie de mot de passe<span>*</span></label>
 								<input type="password" placeholder="Password" name="pwd_client2" />
 							</form>

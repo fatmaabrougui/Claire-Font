@@ -98,7 +98,7 @@
                     <div class="col-lg-3 col-md-3 col-12">
                         <div class="my-cart">
                             <ul>
-                                <li><a href="../../../Projet-Web/cart.php"><i class="fa fa-shopping-cart"></i>My Cart</a>
+                                <li><a href="../../Projet-Web/cart.php"><i class="fa fa-shopping-cart"></i>My Cart</a>
                                     <span>2</span>
                                     <!-- <div class="mini-cart-sub">
                                         <div class="cart-product">
@@ -269,7 +269,7 @@
                                         <div class="sub-menu sub-menu-2">
                                             <ul>
                                                 <li><a href="shop.php">shop</a></li>
-                                                <li><a href="shop-list.php">shop list view</a></li>
+                                                <li><a href="../../Projet_VVeb/Views/Frontoffice/shop.php">shop et promotions</a></li>
                                                 <li><a href="product-details.php">product-details</a></li>
                                                 <li><a href="product-details-affiliate.php">product-affiliate</a></li>
                                                 <li><a href="blog.php">blog</a></li>

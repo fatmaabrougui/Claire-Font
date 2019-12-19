@@ -559,7 +559,7 @@
 ?>
 						<div class="left-menu mb-30">
 							<ul>
-								<li><a href="shopcat.php?id_cat=<?PHP echo $row['nom_categorie'];?>"><?PHP echo $row['nom_categorie'];?><span>(15)</span></a></li>
+								<li><a href="shopcat.php?id_cat=<?PHP echo $row['nom_categorie'];?>"><?PHP echo $row['nom_categorie'];?><span></span></a></li>
 
 
 
